@@ -159,3 +159,7 @@ mpcf: $(OUTPUT).nds
 
 cycloevo: $(OUTPUT).nds
 	$(DEVKITPRO)/tools/bin/dlditool etc/CycloEvo.dldi dslibris.nds
+
+debug:
+	desmume --cflash-path etc/root dslibris.nds
+
